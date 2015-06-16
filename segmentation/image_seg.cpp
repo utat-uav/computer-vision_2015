@@ -33,6 +33,9 @@ int main(int argc, char* argv[])
 	// Taking relevant channels
 	cv::Mat lab_chan [3];
 	cv::Mat abim = cv::Mat(test_im.rows, test_im.cols, CV_8UC2);
+    
+    std::cout << "Rows: " << test_im.rows << " Cols: " << test_im.cols
+              << " Channels: " << test_im.channels() << std::endl;
 
 	// Take only ab channels
 	cv::split(labim, lab_chan);
@@ -42,21 +45,28 @@ int main(int argc, char* argv[])
 	ab_chan.push_back(lab_chan[1]);
 	ab_chan.push_back(lab_chan[2]);
 
-	// MERGE!!!
+	// MERGE!!
 	cv::merge(ab_chan, abim);
 
+    std::cout << "abim :: Rows: " << abim.rows << " Cols: " << abim.cols 
+              << " Channels: " << abim.channels() << std::endl;
+
 	std::cout << "Reshaping..." << std::endl;
-	abim.reshape(0, test_im.rows * test_im.cols);
-	abim.convertTo(abim, CV_32FC2);
+    cv::Mat abim_res = abim.reshape(1, test_im.rows * test_im.cols);  
+
+    std::cout << "# chan " << abim_res.channels() << std::endl;
+	std::cout << "Showing..." << std::endl;
+	cv::imwrite("abim.jpg", abim_res);
+    abim_res.convertTo(abim_res, CV_32FC2);
 
 	std::cout << "Running KMeans..." << std::endl;
 	cv::Mat mylabels;
-	cv::kmeans(abim, MAX_CLUSTERS, mylabels, kmeans_terminator, 2, cv::KMEANS_RANDOM_CENTERS);
+	cv::kmeans(abim_res, MAX_CLUSTERS, mylabels, kmeans_terminator, 2, cv::KMEANS_RANDOM_CENTERS);
 
 	std::cout << "Reshaping..." << std::endl;
-	//mylabels.reshape(0, test_im.rows);
+    cv::Mat mylabels_res = mylabels.reshape(0, test_im.rows);
 
 	std::cout << "Saving labels..." << std::endl;
-	cv::imwrite("labels.jpg", mylabels);
+	cv::imwrite("labels.jpg", mylabels_res * 70);
 
 }
