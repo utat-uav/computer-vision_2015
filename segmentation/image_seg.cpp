@@ -3,6 +3,20 @@
 #include <opencv2/core/core.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
 
+cv::Mat isolateLabel(cv::Mat mylabel, int num_rows, int label_num)
+{
+    cv::Mat outmat = mylabel.clone();
+    for (int i = 0; i < mylabel.rows; ++i)
+    {
+        if (mylabel.at<int>(i, 0) == label_num)
+            outmat.at<int>(i, 0) = 1;
+        else
+            outmat.at<int>(i, 0) = 0;
+    }
+
+    return outmat.reshape(0, num_rows);
+}
+
 int main(int argc, char* argv[])
 {
 	/*
@@ -24,6 +38,7 @@ int main(int argc, char* argv[])
 			MAX_NUM_KMEANS_ITER,
 			MAX_KMEANS_EPSILON
 	);
+
 
 	std::cout << "Converting to Lab..." << std::endl;
 	cv::Mat test_im = cv::imread(argv[1], CV_LOAD_IMAGE_COLOR);
@@ -69,4 +84,23 @@ int main(int argc, char* argv[])
 	std::cout << "Saving labels..." << std::endl;
 	cv::imwrite("labels.jpg", mylabels_res * 70);
 
+    std::cout << "mylabels_res :: Rows: " << mylabels_res.rows << " Cols: " << mylabels_res.cols 
+              << " Channels: " << mylabels_res.channels() << std::endl;
+
+    // Isolate labels
+    cv::Mat mylabels_type [3];
+    for (int i = 0; i < 3; ++i)
+    {
+        mylabels_type[i] = isolateLabel(mylabels, test_im.rows, i);
+    }
+
+    cv::imwrite("labels0.jpg", mylabels_type[0] * 255);
+    cv::imwrite("labels1.jpg", mylabels_type[1] * 255);
+    cv::imwrite("labels2.jpg", mylabels_type[2] * 255);
+
+    cv::Mat inHull, outHull;
+    mylabels_type[2].convertTo(inHull, CV_32F);
+    cv::convexHull(mylabels_type[2], outHull);
+
+    cv::imwrite("outhull.jpg", outHull);
 }
