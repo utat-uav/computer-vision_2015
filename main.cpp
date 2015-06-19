@@ -4,6 +4,7 @@
 // Author: Winston Liu
 
 #include <opencv2/features2d/features2d.hpp>  
+#include <opencv2/nonfree/features2d.hpp>  
 #include <opencv2/opencv.hpp>
 #include <stdlib.h>
 #include <string>
@@ -15,7 +16,7 @@
 #define SAVE_INTERMEDIATE_IMAGES
 
 #ifdef SAVE_INTERMEDIATE_IMAGES
-#define IMOUT( filename , mat_im ) do { cv::imwrite("blurred.jpg", hsvim); } while (0)
+#define IMOUT( filename , mat_im ) do { cv::imwrite(filename, mat_im); } while (0)
 #else
 #define IMOUT( filename, mat_im )
 #endif
@@ -46,7 +47,7 @@ cv::Point2i getMean(std::vector<cv::KeyPoint>& subsetKeys)
 	return meanpt;
 }
 
-std::vector<cv::KeyPoint> procImWithSurf(cv::Mat raw_input)
+std::vector<cv::KeyPoint> procImWithSurf(cv::Mat raw_input, int SURF_thresh)
 {
 	cv::Mat outim, channels[3];
 
@@ -59,19 +60,19 @@ std::vector<cv::KeyPoint> procImWithSurf(cv::Mat raw_input)
 
 	// Denoise
     cv::blur(hsvchannel, hsvchannel, cv::Size(10,10));
-    IMOUT("blurred.jpg", hsvim);
+    IMOUT("blurred.jpg", hsvchannel);
 
 	// Default is ( ~, 4, 2, true, false)
 	// See http://docs.opencv.org/modules/nonfree/doc/feature_detection.html
     cv::Mat mask;
 	std::vector<cv::KeyPoint> keypoints;
-    cv::SURF mySurf(thresh, 4, 2, true, true);
+    cv::SURF mySurf(SURF_thresh, 4, 2, true, true);
     mySurf(hsvchannel, mask, keypoints);
-    IMOUT("surf.jpg", hsvim);
+    IMOUT("surf.jpg", hsvchannel);
 
 	// Print keypoints
     cv::drawKeypoints(hsvchannel, keypoints, outim, (0, 255, 0), 4);
-    IMOUT("keypoints.jpg", hsvim);
+    IMOUT("keypoints.jpg", hsvchannel);
 	IMOUT("imout.jpg", outim);
 
     return keypoints;
@@ -82,33 +83,39 @@ cv::Rect getROISize(cv::Size image_dim, cv::Point2i cluster_mean, int rps)
     // rps: ROI size proportional to whole image 
     // Get ROI size as function of image size
     cv::Point2i roi;
-    cv::Mat image_dim = hsvim[ACTIVE_CHANNEL];
     roi.x = image_dim.width / rps;
     roi.y = image_dim.height / rps;
 
     // Set mean coordinates to the upper left corner
-    mean.x -= roi.x / 2;
-    mean.y -= roi.y / 2;
+    cluster_mean.x -= roi.x / 2;
+    cluster_mean.y -= roi.y / 2;
 
     // Clamp to image range
-    if (mean.x < 0)
-        mean.x = 0;
-    else if (mean.x + roi.x > image_dim.width) 
-        roi.x = image_dim.width - mean.x;
+    if (cluster_mean.x < 0)
+        cluster_mean.x = 0;
+    else if (cluster_mean.x + roi.x > image_dim.width) 
+        roi.x = image_dim.width - cluster_mean.x;
 
-    if (mean.y < 0)
-        mean.y = 0;
-    else if (mean.y + roi.y > image_dim.height) 
-        roi.y = image_dim.height - mean.y;
+    if (cluster_mean.y < 0)
+        cluster_mean.y = 0;
+    else if (cluster_mean.y + roi.y > image_dim.height) 
+        roi.y = image_dim.height - cluster_mean.y;
 
-    return cv::Rect(mean.x, mean.y, roi.x, roi.y);
+    return cv::Rect(cluster_mean.x, cluster_mean.y, roi.x, roi.y);
 }
 
 int main (int argc, char* argv[])
 {
+	if (argc != 3)
+	{
+		std::cout << 
+			"./image_proc <file> <thresh> (-1 for default)" << std::endl;
+		return -1;
+	}
+
     // Get image
 	cv::Mat test_im = cv::imread(argv[1], CV_LOAD_IMAGE_COLOR);
-    std::vector<cv::KeyPoint> keypoints = procImWithSurf(test_im);
+    std::vector<cv::KeyPoint> keypoints = procImWithSurf(test_im, atoi(argv[2]));
 
     // DBSCAN -> returns a tree of vectors
 	std::vector<std::vector<cv::KeyPoint> > clusters = DBSCAN_keypoints(&keypoints, DBSCAN_eps, DBSCAN_minPts);
@@ -121,7 +128,7 @@ int main (int argc, char* argv[])
         if (mean.x == 0 && mean.y == 0)
             continue;
 
-        cv::Rect roiBounds = getROISize(test_im.size, mean, roiProportionalSize)
+        cv::Rect roiBounds = getROISize(test_im.size(), mean, roiProportionalSize);
 
         // Display ROI
         // Name image
@@ -132,7 +139,7 @@ int main (int argc, char* argv[])
 
         std::ostringstream oss;
         oss << "ROI_" << proc_name << "_" << i << ".jpg";
-        roiOut = test_im(roiBounds);
+        cv::Mat roiOut = test_im(roiBounds).clone();
         IMOUT(oss.str(), roiOut);
 	}
 }

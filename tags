@@ -1,0 +1,434 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ACTIVE_CHANNEL	main.cpp	15;"	d	file:
+ACTIVE_CHANNEL	postproc/mecanny.cpp	16;"	d	file:
+ACTIVE_CHANNEL	surf/mesurf.cpp	30;"	d	file:
+AFX_STDAFX_H__1B43847D_BFC6_4C90_B265_E89E6694B4CC__INCLUDED_	PointMatch/StdAfx.h	7;"	d
+ARCHITECTURE_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	298;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	301;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	304;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	307;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	310;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	313;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	316;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	320;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	291;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	294;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	297;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	300;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	303;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	306;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	309;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	313;"	d	file:
+AddEdge	PointMatch/Tools.cpp	/^int	AddEdge( EDGE *Edge, int &nEdge, int nMaxPnt, int Node1, int Node2, double Dist )$/;"	f
+AffineEst	PointMatch/Affine.cpp	/^int AffineEst( MYPOINT *PntModel, int nPntModel, MYPOINT *PntDeform, int nPntDeform, MYPOINT &Trans, double A[2][2])$/;"	f
+AffineEst2	PointMatch/Affine.cpp	/^int AffineEst2( MYPOINT *PntModel, MYPOINT *PntDeform, int nPnt, MYPOINT &Trans, double A[2][2])$/;"	f
+AffineEstLMS	PointMatch/Affine.cpp	/^int AffineEstLMS( MYPOINT *PntModel, int nPntModel, MYPOINT *PntDeform, int nPntDeform, $/;"	f
+AffineLMS	PointMatch/Affine.cpp	/^int AffineLMS( MYPOINT *PntModel, int nPntModel, MYPOINT *PntDeform, int nPntDeform)$/;"	f
+AffineLS	PointMatch/Affine.cpp	/^int AffineLS( MYPOINT *PntModel, int nPntModel, MYPOINT *PntDeform, int nPntDeform)$/;"	f
+AffineTransform	PointMatch/Affine.cpp	/^int AffineTransform( MYPOINT *Pnt, int nPnt, MYPOINT Trans, double A[2][2] )$/;"	f
+AffineTransform	PointMatch/Affine.cpp	/^int AffineTransform( double x, double y, double &u, double &v, MYPOINT Trans, double A[2][2] )$/;"	f
+AllocateMemory	PointMatch/PointMatch.cpp	/^int	AllocateMemory( int nMaxPnt )$/;"	f
+BIG	PointMatch/Hungarian.cpp	40;"	d	file:
+BLURSIZE	postproc/mecanny.cpp	/^const int BLURSIZE = 5;$/;"	v
+BatchTest	PointMatch/PointMatchDemo1.cpp	/^int BatchTest( char *pattern, char *type, int nTotalLevel, int nTotalTrial, char *fnLog )$/;"	f
+CMAKE_BINARY_DIR	build/Makefile	/^CMAKE_BINARY_DIR = \/home\/liuche25\/UTAT\/UTAT\/UTAT_computer-vision\/build$/;"	m
+CMAKE_COMMAND	build/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
+CMAKE_EDIT_COMMAND	build/Makefile	/^CMAKE_EDIT_COMMAND = \/usr\/bin\/ccmake$/;"	m
+CMAKE_SOURCE_DIR	build/Makefile	/^CMAKE_SOURCE_DIR = \/home\/liuche25\/UTAT\/UTAT\/UTAT_computer-vision$/;"	m
+COMPILER_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	107;"	d	file:
+COMPILER_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	112;"	d	file:
+COMPILER_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	119;"	d	file:
+COMPILER_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	122;"	d	file:
+COMPILER_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	125;"	d	file:
+COMPILER_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	133;"	d	file:
+COMPILER_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	13;"	d	file:
+COMPILER_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	152;"	d	file:
+COMPILER_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	160;"	d	file:
+COMPILER_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	165;"	d	file:
+COMPILER_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	170;"	d	file:
+COMPILER_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	177;"	d	file:
+COMPILER_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	194;"	d	file:
+COMPILER_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	197;"	d	file:
+COMPILER_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	200;"	d	file:
+COMPILER_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	24;"	d	file:
+COMPILER_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	32;"	d	file:
+COMPILER_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	38;"	d	file:
+COMPILER_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	44;"	d	file:
+COMPILER_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	50;"	d	file:
+COMPILER_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	56;"	d	file:
+COMPILER_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	70;"	d	file:
+COMPILER_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	77;"	d	file:
+COMPILER_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	85;"	d	file:
+COMPILER_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	88;"	d	file:
+COMPILER_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	90;"	d	file:
+COMPILER_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	99;"	d	file:
+COMPILER_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	104;"	d	file:
+COMPILER_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	112;"	d	file:
+COMPILER_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	117;"	d	file:
+COMPILER_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	124;"	d	file:
+COMPILER_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	127;"	d	file:
+COMPILER_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	12;"	d	file:
+COMPILER_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	135;"	d	file:
+COMPILER_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	154;"	d	file:
+COMPILER_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	162;"	d	file:
+COMPILER_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	167;"	d	file:
+COMPILER_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	170;"	d	file:
+COMPILER_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	187;"	d	file:
+COMPILER_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	18;"	d	file:
+COMPILER_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	190;"	d	file:
+COMPILER_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	193;"	d	file:
+COMPILER_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	29;"	d	file:
+COMPILER_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	37;"	d	file:
+COMPILER_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	43;"	d	file:
+COMPILER_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	49;"	d	file:
+COMPILER_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	55;"	d	file:
+COMPILER_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	61;"	d	file:
+COMPILER_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	75;"	d	file:
+COMPILER_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	82;"	d	file:
+COMPILER_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	90;"	d	file:
+COMPILER_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	93;"	d	file:
+COMPILER_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	95;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	100;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	108;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	114;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	126;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	135;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	154;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	15;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	172;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	180;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	185;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	25;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	33;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	39;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	46;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	52;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	59;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	64;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	72;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	79;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	93;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	105;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	113;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	119;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	128;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	137;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	14;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	156;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	173;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	178;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	20;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	30;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	38;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	44;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	51;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	57;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	64;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	69;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	77;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	84;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	98;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	101;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	109;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	115;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	127;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	136;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	155;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	16;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	173;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	181;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	186;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	26;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	34;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	40;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	47;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	53;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	60;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	65;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	73;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	80;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	94;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	106;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	114;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	120;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	129;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	138;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	157;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	15;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	174;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	179;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	21;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	31;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	39;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	45;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	52;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	58;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	65;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	70;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	78;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	85;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	99;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	103;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	116;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	129;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	140;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	143;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	156;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	174;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	17;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	182;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	187;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	28;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	35;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	41;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	61;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	66;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	74;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	81;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	95;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	100;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	108;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	121;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	131;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	142;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	145;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	158;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	175;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	180;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	22;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	33;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	40;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	46;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	66;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	71;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	79;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	86;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	147;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	20;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	149;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	25;"	d	file:
+CalMatchError	PointMatch/PointMatchDemo1.cpp	/^int CalMatchError( MYPOINT *PntModel, MYPOINT *PntTruth, int nPnt,  double &nErr, int &nMisMatch )$/;"	f
+CalPointDist	PointMatch/ShapeContext.cpp	/^int	CalPointDist(MYPOINT *Pnt, int nPnt, double **r_array, double &mean_dist)$/;"	f
+CalRBinEdge	PointMatch/ShapeContext.cpp	/^int	CalRBinEdge( int nbins_r, double r_inner, double r_outer, double *r_bins_edges )$/;"	f
+CalRefAngle	PointMatch/ShapeContext.cpp	/^int	CalRefAngle( MYPOINT *Pnt, int nPnt)$/;"	f
+CalShapeContext	PointMatch/ShapeContext.cpp	/^int	CalShapeContext(MYPOINT *Pnt, int nPnt, int nbins_theta, int nbins_r, $/;"	f
+Cal_E	PointMatch/Bookstein.cpp	/^int	Cal_E( double *TPS, int dim, double *cx, double *cy, double &TPS_cost )$/;"	f
+Cal_cxy	PointMatch/Bookstein.cpp	/^int	Cal_cxy( double *InvTPS, int dim, MYPOINT *Y, double *cx, double *cy )$/;"	f
+ChangeFileExt	PointMatch/Tools.cpp	/^int ChangeFileExt ( char *dest, char *src, char *ext )$/;"	f
+ColMatch	PointMatch/Relax.cpp	/^int		*ColMatch = NULL;$/;"	v
+ColNorm	PointMatch/Relax.cpp	/^double ColNorm( double **p, int nRow, int nCol )$/;"	f
+Convert2Prob	PointMatch/Relax.cpp	/^int Convert2Prob( double **costmat, double **p, int nRowPnt, double nColPnt, double T)$/;"	f
+DBSCAN_eps	main.cpp	/^float DBSCAN_eps = 200;$/;"	v
+DBSCAN_keypoints	postproc/dbscan.cpp	/^std::vector<std::vector<cv::KeyPoint> > DBSCAN_keypoints(std::vector<cv::KeyPoint> *keypoints, float eps, int minPts)$/;"	f
+DBSCAN_keypoints	surf/dbscan.cpp	/^std::vector<std::vector<cv::KeyPoint> > DBSCAN_keypoints(std::vector<cv::KeyPoint> *keypoints, float eps, int minPts)$/;"	f
+DBSCAN_minPts	main.cpp	/^int DBSCAN_minPts= 2;$/;"	v
+DEBUG_ON	surf/mesurf.cpp	29;"	d	file:
+DEC	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	324;"	d	file:
+DEC	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	317;"	d	file:
+Dist	PointMatch/Tools.cpp	/^	double	Dist;$/;"	m	struct:__anon1	file:
+DumpGraph	PointMatch/Tools.cpp	/^int DumpGraph( char *fnGraph, MYPOINT *Pnt, int nPnt )$/;"	f
+DumpMatch	PointMatch/Tools.cpp	/^int DumpMatch( char *fnMatch, MYPOINT *PntModel, int nPntModel, MYPOINT *PntDeform, int nPntDeform )$/;"	f
+DumpProbMatrix	PointMatch/Relax.cpp	/^int DumpProbMatrix( char *fn, double **p, int nRow, int nCol )$/;"	f
+EDGE	PointMatch/Tools.cpp	/^}EDGE; \/\/Data structure of an edge$/;"	t	typeref:struct:__anon1	file:
+ELEM_SWAP	PointMatch/Tools.cpp	986;"	d	file:
+EQUALS	build/Makefile	/^EQUALS = =$/;"	m
+E_Ave	PointMatch/PointMatch.cpp	/^int		E_Ave		= 5;	\/\/Average number of edges per point$/;"	v
+FreeMemory	PointMatch/PointMatch.cpp	/^int FreeMemory( int nMaxPnt )$/;"	f
+GetAffineResidual	PointMatch/Affine.cpp	/^int GetAffineResidual( MYPOINT *PntModel, int nPntModel, MYPOINT *PntDeform, MYPOINT Trans, double A[2][2], double *nErr )$/;"	f
+GetDistance	PointMatch/Tools.cpp	/^double GetDistance ( double x1, double y1, double x2, double y2 )$/;"	f
+GetFileExtension	PointMatch/Tools.cpp	/^CString GetFileExtension ( CString FileName )$/;"	f
+GetFileName	PointMatch/Tools.cpp	/^CString GetFileName ( CString strFileName )$/;"	f
+GetFileNameWithoutExt	PointMatch/Tools.cpp	/^CString GetFileNameWithoutExt ( CString strFileName )$/;"	f
+GetMedian	PointMatch/Tools.cpp	/^double GetMedian(double *arr, int n)$/;"	f
+GetMedianAffineResidual	PointMatch/Affine.cpp	/^double GetMedianAffineResidual( MYPOINT *PntModel, int nPntModel, MYPOINT *PntDeform, MYPOINT Trans, double A[2][2])$/;"	f
+GetSquareDistance	PointMatch/ShapeContext.cpp	/^double GetSquareDistance ( MYPOINT &pnt1, MYPOINT &pnt2 )$/;"	f
+HEX	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	335;"	d	file:
+HEX	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	328;"	d	file:
+HistCost	PointMatch/ShapeContext.cpp	/^int HistCost( double **SC1, int nPnt1, double **SC2, int nPnt2, int nbins, double **costmat)$/;"	f
+HungarianMatch	PointMatch/Tools.cpp	/^double HungarianMatch( double **costmat, MYPOINT *RowPnt, int nRowPnt, MYPOINT *ColPnt, int nColPnt)$/;"	f
+HungarianMatch	PointMatch/Tools.cpp	/^double HungarianMatch( double **costmat, MYPOINT *RowPnt, int nRowPnt, MYPOINT *ColPnt, int nColPnt, int nTotalPnt )$/;"	f
+IDS_HELLO	PointMatch/Resource.h	5;"	d
+ID_VOID_MAIN	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	9;"	d	file:
+IMOUT	main.cpp	19;"	d	file:
+IMOUT	main.cpp	21;"	d	file:
+I_Max	PointMatch/PointMatch.cpp	/^int		I_Max		= 10;	\/\/Maximum number of iteration$/;"	v
+InitProb	PointMatch/Relax.cpp	/^int	InitProb( double **costmat, double **p, int nRowPnt, int nColPnt )$/;"	f
+Inv	PointMatch/Tools.cpp	/^int Inv(double a[], int n)$/;"	f
+InvTPS	PointMatch/PointMatch.cpp	/^double  *InvTPS		= NULL;		\/\/Inversion of the matrix of the TPS transform$/;"	v
+IsSmallTriangle	PointMatch/Affine.cpp	/^BOOL IsSmallTriangle( MYPOINT *Pnt, int *ValidPnt, double mean_dist )$/;"	f
+LabelFirmMatch	PointMatch/Relax.cpp	/^int LabelFirmMatch( )$/;"	f
+LabelOutlier	PointMatch/Outlier.cpp	/^int LabelOutlier( MYPOINT *Pnt, int nPnt, double **r_array, int nReservePnt )$/;"	f
+MAX_NEIGHBOR_SIZE	PointMatch/PointMatch.h	59;"	d
+MINIMUM_VALUE	PointMatch/Relax.cpp	38;"	d	file:
+MYPOINT	PointMatch/PointMatch.h	/^struct MYPOINT{$/;"	s
+MatrixMultiply	PointMatch/Tools.cpp	/^double	MatrixMultiply( double *a, double *b, double *c, int m, int n, int k)$/;"	f
+Node1	PointMatch/Tools.cpp	/^	int		Node1;$/;"	m	struct:__anon1	file:
+Node2	PointMatch/Tools.cpp	/^	int		Node2;$/;"	m	struct:__anon1	file:
+Normalize	PointMatch/Relax.cpp	/^int	Normalize( double **p, int nRowPnt, int nColPnt )$/;"	f
+ONE_FIRM	PointMatch/Relax.h	39;"	d
+OUTLIER_PROB	PointMatch/Relax.h	34;"	d
+OneIterationRL	PointMatch/Relax.cpp	/^int OneIterationRL( MYPOINT *RowPnt, int nRowPnt, MYPOINT *ColPnt, int nColPnt)$/;"	f
+P	PointMatch/Relax.cpp	/^double	**P;$/;"	v
+P2	PointMatch/Relax.cpp	/^double	**P2;$/;"	v
+PI	PointMatch/PointMatch.h	51;"	d
+PI	PointMatch/Tools.h	35;"	d
+PLATFORM_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	212;"	d	file:
+PLATFORM_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	215;"	d	file:
+PLATFORM_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	218;"	d	file:
+PLATFORM_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	221;"	d	file:
+PLATFORM_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	224;"	d	file:
+PLATFORM_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	227;"	d	file:
+PLATFORM_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	230;"	d	file:
+PLATFORM_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	233;"	d	file:
+PLATFORM_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	236;"	d	file:
+PLATFORM_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	239;"	d	file:
+PLATFORM_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	242;"	d	file:
+PLATFORM_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	245;"	d	file:
+PLATFORM_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	248;"	d	file:
+PLATFORM_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	251;"	d	file:
+PLATFORM_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	254;"	d	file:
+PLATFORM_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	257;"	d	file:
+PLATFORM_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	260;"	d	file:
+PLATFORM_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	263;"	d	file:
+PLATFORM_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	266;"	d	file:
+PLATFORM_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	269;"	d	file:
+PLATFORM_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	272;"	d	file:
+PLATFORM_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	275;"	d	file:
+PLATFORM_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	278;"	d	file:
+PLATFORM_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	281;"	d	file:
+PLATFORM_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	284;"	d	file:
+PLATFORM_ID	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	287;"	d	file:
+PLATFORM_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	205;"	d	file:
+PLATFORM_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	208;"	d	file:
+PLATFORM_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	211;"	d	file:
+PLATFORM_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	214;"	d	file:
+PLATFORM_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	217;"	d	file:
+PLATFORM_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	220;"	d	file:
+PLATFORM_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	223;"	d	file:
+PLATFORM_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	226;"	d	file:
+PLATFORM_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	229;"	d	file:
+PLATFORM_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	232;"	d	file:
+PLATFORM_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	235;"	d	file:
+PLATFORM_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	238;"	d	file:
+PLATFORM_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	241;"	d	file:
+PLATFORM_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	244;"	d	file:
+PLATFORM_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	247;"	d	file:
+PLATFORM_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	250;"	d	file:
+PLATFORM_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	253;"	d	file:
+PLATFORM_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	256;"	d	file:
+PLATFORM_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	259;"	d	file:
+PLATFORM_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	262;"	d	file:
+PLATFORM_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	265;"	d	file:
+PLATFORM_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	268;"	d	file:
+PLATFORM_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	271;"	d	file:
+PLATFORM_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	274;"	d	file:
+PLATFORM_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	277;"	d	file:
+PLATFORM_ID	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	280;"	d	file:
+Permute	PointMatch/Affine.cpp	/^int	Permute( int *nPos, int nPoint )$/;"	f
+PointMatch	PointMatch/PointMatch.cpp	/^int PointMatch( MYPOINT *PntModel, int nPntModel, MYPOINT *PntDeform, int nPntDeform )$/;"	f
+PointMatchOutlier	PointMatch/PointMatch.cpp	/^int PointMatchOutlier( MYPOINT *PntModel, int nPntModel, MYPOINT *PntDeform, int nPntDeform )$/;"	f
+RM	build/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
+R_Max	PointMatch/Relax.cpp	41;"	d	file:
+ReadPointFile	PointMatch/Tools.cpp	/^int ReadPointFile( char *fnPoint, MYPOINT *&Pnt, int &nPnt )$/;"	f
+ReadSynFile	PointMatch/Tools.cpp	/^int ReadSynFile( char *fnSyn, MYPOINT *&PntModel, int &nPntModel, MYPOINT *&PntDeform, int &nPntDeform, MYPOINT *&PntTruth, int &nPntTruth )$/;"	f
+RelaxLabel	PointMatch/Relax.cpp	/^int	RelaxLabel( MYPOINT *RowPnt, int nRowPoint, MYPOINT *ColPnt, int nColPoint, double **costmat )$/;"	f
+RemoveOutlier	PointMatch/Tools.cpp	/^int	RemoveOutlier( MYPOINT *Pnt, MYPOINT *Pnt2, int nPnt )$/;"	f
+RowMatch	PointMatch/Relax.cpp	/^int		*RowMatch = NULL;$/;"	v
+RowNorm	PointMatch/Relax.cpp	/^double RowNorm( double **p, int nRow, int nCol )$/;"	f
+SAVE_INTERMEDIATE_IMAGES	main.cpp	16;"	d	file:
+SCDeform	PointMatch/PointMatch.cpp	/^double  **SCDeform	= NULL;		\/\/Shape contexts for the deformed shape	$/;"	v
+SCModel	PointMatch/PointMatch.cpp	/^double	**SCModel	= NULL;		\/\/Shape contexts for the model shape$/;"	v
+SHELL	build/Makefile	/^SHELL = \/bin\/sh$/;"	m
+SUFFIXES	build/Makefile	/^SUFFIXES =$/;"	m
+SetEdgeNonUniformScale	PointMatch/Tools.cpp	/^int	SetEdgeNonUniformScale( MYPOINT *Pnt, int nPnt, double **r_array, double E_Ave )$/;"	f
+SetEdgeSimple	PointMatch/Tools.cpp	/^int	SetEdgeSimple( MYPOINT *Pnt, int nPnt, double **r_array, double E_Ave )$/;"	f
+SetEdgeSimple_Outlier	PointMatch/Tools.cpp	/^int	SetEdgeSimple_Outlier( MYPOINT *Pnt, int nPnt, double **r_array, double E_Ave )$/;"	f
+SetMinMatch	PointMatch/Tools.cpp	/^int SetMinMatch( double **costmat, MYPOINT *PntRow, int nPntRow, MYPOINT *PntCol, int nPntCol, int nMinMatch, double nMinConf )$/;"	f
+SetOutlierCost	PointMatch/Outlier.cpp	/^int SetOutlierCost( double **costmat, int nRow, int nCol, MYPOINT *Pnt )$/;"	f
+SetOutlierProb	PointMatch/Relax.cpp	/^int SetOutlierProb( double **p, int nRowPnt, int nColPnt, double OutlierProb )$/;"	f
+SingleTest	PointMatch/PointMatchDemo1.cpp	/^int SingleTest( char *fnSyn, char *fnLog, double &nErr, int &nMisMatch )$/;"	f
+SingleTest	PointMatch/PointMatchDemo2.cpp	/^int SingleTest( char *fnPntModel, char *fnPntDeform, char *fnMatch )$/;"	f
+SortPoints	PointMatch/Tools.cpp	/^int SortPoints( MYPOINT *Pnt, MYPOINT *Pnt2, MYPOINT *PntMatch, int nPnt)$/;"	f
+Support	PointMatch/Relax.cpp	/^double Support(MYPOINT RowPnt, MYPOINT ColPnt)$/;"	f
+TPS	PointMatch/PointMatch.cpp	/^double  *TPS		= NULL;		\/\/Matrix of the TPS transform$/;"	v
+TPS_Transform	PointMatch/Bookstein.cpp	/^int	TPS_Transform( MYPOINT *PntModel, MYPOINT *PntModelNew, int nPntModel, $/;"	f
+TPS_Transform	PointMatch/Bookstein.cpp	/^int TPS_Transform( MYPOINT *Pnt, MYPOINT *PntNew, int nPnt, MYPOINT *PntAnchor, int nPntAnchor, double *cx, double *cy )$/;"	f
+T_Init	PointMatch/Relax.cpp	/^double 	T_Init = 0.1;$/;"	v
+Usage	PointMatch/PointMatchDemo1.cpp	/^int Usage()$/;"	f
+Usage	PointMatch/PointMatchDemo2.cpp	/^int Usage()$/;"	f
+VC_EXTRALEAN	PointMatch/StdAfx.h	13;"	d
+ZERO_FIRM	PointMatch/Relax.h	42;"	d
+_APS_NEXT_COMMAND_VALUE	PointMatch/Resource.h	12;"	d
+_APS_NEXT_CONTROL_VALUE	PointMatch/Resource.h	13;"	d
+_APS_NEXT_RESOURCE_VALUE	PointMatch/Resource.h	11;"	d
+_APS_NEXT_SYMED_VALUE	PointMatch/Resource.h	14;"	d
+__POINT_MATCH_H__	PointMatch/PointMatch.h	31;"	d
+__RELAX_H__	PointMatch/Relax.h	31;"	d
+__TOOLS_H__	PointMatch/Tools.h	30;"	d
+_tmain	PointMatch/PointMatchDemo1.cpp	/^int _tmain(int argc, TCHAR* argv[], TCHAR* envp[])$/;"	f
+_tmain	PointMatch/PointMatchDemo2.cpp	/^int _tmain(int argc, TCHAR* argv[], TCHAR* envp[])$/;"	f
+affine_LMS_flag	PointMatch/PointMatch.cpp	/^int		affine_LMS_flag			= 1;	\/\/Default: Using LMS for the first iteration$/;"	v
+all_match_flag	PointMatch/PointMatch.cpp	/^int		all_match_flag			= 0;	\/\/Default: Do not force to find as many matches as possible$/;"	v
+bookstein	PointMatch/Bookstein.cpp	/^int bookstein( MYPOINT *X, MYPOINT *Y, int nPnt, double beta_k, double *cx, double *cy)$/;"	f
+costmat	PointMatch/PointMatch.cpp	/^double  **costmat	= NULL;		\/\/Matrix of the shape context distances between points from two shapes$/;"	v
+eps	PointMatch/PointMatch.h	55;"	d
+eps	surf/mesurf.cpp	/^float eps = 200;$/;"	v
+getMean	main.cpp	/^cv::Point2i getMean(std::vector<cv::KeyPoint>& subsetKeys)$/;"	f
+getMean	surf/mesurf.cpp	/^cv::Point2i getMean(std::vector<cv::KeyPoint>& subsetKeys)$/;"	f
+getROISize	main.cpp	/^cv::Rect getROISize(cv::Size image_dim, cv::Point2i cluster_mean, int rps)$/;"	f
+hungarian	PointMatch/Hungarian.cpp	/^double hungarian( double **assigncost, int dim, int *colsol, int *rowsol)$/;"	f
+info_arch	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v
+info_arch	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v
+info_compiler	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v
+info_compiler	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v
+info_platform	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	/^char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v
+info_platform	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v
+info_version	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	/^char const info_version[] = {$/;"	v
+info_version	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_version[] = {$/;"	v
+init_label_outlier_flag	PointMatch/PointMatch.cpp	/^int		init_label_outlier_flag	= 0;	\/\/Default: Do not use heuristic rule to label outliers$/;"	v
+isolateLabel	segmentation/image_seg.cpp	/^cv::Mat isolateLabel(cv::Mat mylabel, int num_rows, int label_num)$/;"	f
+lambda_o	PointMatch/PointMatch.cpp	/^double	lambda_o	= 1;	\/\/Regularization parameter (normalized) of the TPS deformation$/;"	v
+main	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	/^int main(int argc, char* argv[])$/;"	f
+main	build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c	/^void main() {}$/;"	f
+main	build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^int main(int argc, char* argv[])$/;"	f
+main	main.cpp	/^int main (int argc, char* argv[])$/;"	f
+main	postproc/mecanny.cpp	/^int main(int argc, char* argv[])$/;"	f
+main	segmentation/image_seg.cpp	/^int main(int argc, char* argv[])$/;"	f
+main	surf/mesurf.cpp	/^int main(int argc, char* argv[])$/;"	f
+mean_dist_deform	PointMatch/PointMatch.cpp	/^double	mean_dist_deform, mean_dist_model;  \/\/Mean distances$/;"	v
+mean_dist_model	PointMatch/PointMatch.cpp	/^double	mean_dist_deform, mean_dist_model;  \/\/Mean distances$/;"	v
+minPts	surf/mesurf.cpp	/^int minPts = 2;$/;"	v
+nAngleToCenter	PointMatch/PointMatch.h	/^	double	nAngleToCenter;	\/\/Angle from this point to the mass center of the shape$/;"	m	struct:MYPOINT
+nColPnt	PointMatch/Relax.cpp	/^int		nColPnt;$/;"	v
+nMatch	PointMatch/PointMatch.h	/^	int		nMatch;			\/\/Matching result$/;"	m	struct:MYPOINT
+nMeanErr	PointMatch/PointMatchDemo1.cpp	/^double	nMeanErr[10], nSigmaErr[10];$/;"	v
+nMeanMisMatch	PointMatch/PointMatchDemo1.cpp	/^double	nMeanMisMatch[10], nSigmaMisMatch[10];$/;"	v
+nNeighborList	PointMatch/PointMatch.h	/^	int		nNeighborList[MAX_NEIGHBOR_SIZE];	\/\/Neighbor list$/;"	m	struct:MYPOINT
+nNumNeighbor	PointMatch/PointMatch.h	/^	int		nNumNeighbor;	\/\/Number of neighbors of this point $/;"	m	struct:MYPOINT
+nRowPnt	PointMatch/Relax.cpp	/^int		nRowPnt;$/;"	v
+nSigmaErr	PointMatch/PointMatchDemo1.cpp	/^double	nMeanErr[10], nSigmaErr[10];$/;"	v
+nSigmaMisMatch	PointMatch/PointMatchDemo1.cpp	/^double	nMeanMisMatch[10], nSigmaMisMatch[10];$/;"	v
+nTrueMatch	PointMatch/PointMatch.h	/^	int		nTrueMatch;		\/\/The true match, used to testing$/;"	m	struct:MYPOINT
+nbins_r	PointMatch/PointMatch.cpp	/^int		nbins_r		= 5;		\/\/Number of bins in distance$/;"	v
+nbins_theta	PointMatch/PointMatch.cpp	/^int		nbins_theta	= 12;		\/\/Number of bins in angle$/;"	v
+neighborhood_flag	PointMatch/PointMatch.cpp	/^int		neighborhood_flag		= 0;	\/\/Default: Simple neighborhood definition. $/;"	v
+procImWithSurf	main.cpp	/^std::vector<cv::KeyPoint> procImWithSurf(cv::Mat raw_input, int SURF_thresh)$/;"	f
+r_array	PointMatch/PointMatch.cpp	/^double	**r_array	= NULL;		\/\/Distance array$/;"	v
+r_bins_edges	PointMatch/PointMatch.cpp	/^double	r_bins_edges[10];		\/\/Lattice of radius$/;"	v
+r_inner	PointMatch/PointMatch.cpp	/^double	r_inner		= 1.0\/8;	\/\/The minimum distance$/;"	v
+r_outer	PointMatch/PointMatch.cpp	/^double	r_outer		= 2.0;		\/\/The maximum distance$/;"	v
+readQR	qrproc/qrproc.cpp	/^void readQR(cv::Mat &roi)$/;"	f
+regionQuery	postproc/dbscan.cpp	/^std::vector<int> regionQuery(std::vector<cv::KeyPoint> *keypoints, cv::KeyPoint *keypoint, float eps)$/;"	f
+regionQuery	surf/dbscan.cpp	/^std::vector<int> regionQuery(std::vector<cv::KeyPoint> *keypoints, cv::KeyPoint *keypoint, float eps)$/;"	f
+relax_graph_match_flag	PointMatch/PointMatch.cpp	/^int		relax_graph_match_flag	= 1;	\/\/Default: Using the relaxation labeling method for graph matching$/;"	v
+roiProportional	surf/mesurf.cpp	/^int roiProportional = 10;$/;"	v
+roiProportionalSize	main.cpp	/^int roiProportionalSize = 10;$/;"	v
+rotate_invariant_flag	PointMatch/PointMatch.cpp	/^int		rotate_invariant_flag	= 0;	\/\/Default: Do not use rotation invariance for the first round$/;"	v
+theta_array	PointMatch/PointMatch.cpp	/^double  **theta_array=NULL;		\/\/Theta angle array$/;"	v
+x	PointMatch/PointMatch.h	/^	double	x;	\/\/X coordinate$/;"	m	struct:MYPOINT
+y	PointMatch/PointMatch.h	/^	double  y;	\/\/Y coordinate$/;"	m	struct:MYPOINT

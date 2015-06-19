@@ -3,6 +3,7 @@
 // For UTAT use only.
 
 #include <opencv2/features2d/features2d.hpp>  
+#include <opencv2/nonfree/features2d.hpp>  
 #include <opencv2/opencv.hpp>
 #include <stdlib.h>
 #include <string>
@@ -107,7 +108,7 @@ int main(int argc, char* argv[])
 		cv::cvtColor(test_im, hsvim, CV_RGB2HSV); 
 		cv::split(hsvim, channels);
 		std::cout << "Saving image ..." << std::endl;
-		cv::imwrite("hsvim.jpg", hsvim);
+		//cv::imwrite("hsvim.jpg", hsvim);
 		hsvchannel = channels[ACTIVE_CHANNEL];
 	}
 	catch (...)
@@ -124,7 +125,7 @@ int main(int argc, char* argv[])
 	{
 		cv::blur(hsvchannel, hsvchannel, cv::Size(10,10));
 		std::cout << "Saving image ..." << std::endl;
-		cv::imwrite("blur.jpg", hsvim);
+		//cv::imwrite("blur.jpg", hsvim);
 	}
 	catch (...)
 	{
@@ -147,7 +148,7 @@ int main(int argc, char* argv[])
 		mysurf(hsvchannel, mask, keypoints);
 
 		std::cout << "Saving image ..." << std::endl;
-		cv::imwrite("surf.jpg", hsvim);
+		//cv::imwrite("surf.jpg", hsvim);
 	}
 	catch (...)
 	{
@@ -162,7 +163,7 @@ int main(int argc, char* argv[])
 		cv::drawKeypoints(hsvchannel, keypoints, outim, (0, 255, 0), 4);
 		std::cout << "Number of keypoints: " << keypoints.size() << std::endl;
 		std::cout << "Saving image ..." << std::endl;
-		cv::imwrite("keypoints.jpg", hsvim);
+		//cv::imwrite("keypoints.jpg", hsvim);
 	}
 	catch (...)
 	{
@@ -232,12 +233,6 @@ int main(int argc, char* argv[])
 			roiIm = hsvim(cv::Rect(mean.x, mean.y, roi.x, roi.y));
 			cv::split(roiIm, roiChan);
 
-			// Using FAST edge detection
-			/*
-			   std::cout << "Edge detection ..." << std::endl;
-			   cv::FAST(roiChan[ACTIVE_CHANNEL], roiPoints, 100);	
-			   */
-
 			std::cout << "Drawing keypoints ..." << std::endl;
 			cv::drawKeypoints(roiChan[ACTIVE_CHANNEL], roiPoints, roiIm);
 
@@ -253,7 +248,7 @@ int main(int argc, char* argv[])
 	}
 
 	std::cout << "Saving image ..." << std::endl;
-	cv::imwrite("imout.jpg", outim);
+	//cv::imwrite("imout.jpg", outim);
 
 	//cv::waitKey(0);
 	std::cout << "Done." << std::endl;
