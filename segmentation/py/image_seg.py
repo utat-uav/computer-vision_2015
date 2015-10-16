@@ -19,22 +19,18 @@ class Segment:
 		
 		print("Rows:", rows, "Cols:", cols)
 		#only transfer 2nd and 3rd (A and B) channels to `abim`
-		# print(lab_img.shape, abim.shape, Lim.shape)
-		# cv2.mixChannels(lab_img, abim, [ 1, 0, 2, 1 ])
-		
-		# lab_channels = np.empty([3, rows, cols])
 		lab_channels = cv2.split(lab_img)
-		abim = cv2.merge(np.delete(lab_channels, 1, 0))
+		abim = cv2.merge(np.delete(lab_channels, 0, 0)) #remove the L channel
 		
 		print("Reshaping...")
-		abim_flat = np.float32(np.reshape(abim, (rows*cols, 2)))
+		abim_flat = np.float32(np.reshape(abim, (rows*cols, 2))) #flatten to a rows*col length array with 2 channels
 		
 		print("Running KMeans")
 		retval, labels_flat, centers = cv2.kmeans(abim_flat, self.MAX_CLUSTERS, self.KMEANS_TERMINATOR, 2, cv2.KMEANS_RANDOM_CENTERS)
 		
 		print("Reshaping...")
 		#transform from flat to original image dimensions by feeding in data throught he buffer row-by-row
-		labels = np.reshape(labels_flat, (rows, cols))
+		labels = np.reshape(labels_flat, (rows, cols)) #reshape the flat labels array to original dimensions
 		
 		print("Saving labels...")
 		#{MAX_CLUSTERS}-color greyscale image
@@ -42,17 +38,24 @@ class Segment:
 		
 		isolated_labels = []
 		for i in range(self.MAX_CLUSTERS):
-			#map equality function onto all elements in `labels` and push the result (a matrix the size of `labels` with only True and False) onto `isolated_labels
+			#map equality function onto all elements in `labels` and push the result (a matrix the size of `labels` with only 0 or 1) onto `isolated_labels`. It's important to cast the Bool to np.int since `findContours` won't accept an array "of type=0"
 			isolated_labels.append(np.vectorize(lambda x: np.int(x==i))(labels))
 			cv2.imwrite("labels"+str(i)+".jpg", isolated_labels[i]*255)
 		
-		#run convexHull on the shape
+		##CONVEXHULL
+		
+		#first, generate a list of contours, each a list of tuples (x,y)
 		shape_contours, hierarchy = cv2.findContours(isolated_labels[2].astype(np.uint8), cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
+		#Find the most complex shape: the contour with the most points
 		most_complex_shape = reduce(lambda x, y: x if len(x)>len(y) else y, shape_contours)
+		#Run `convexHull`
 		outHull = cv2.convexHull(most_complex_shape)
+		
+		#create a blank, black image and draw the simplified shape onto it
 		hull_img = np.zeros((rows, cols, 3))
 		cv2.fillConvexPoly(hull_img, outHull, [255, 255, 255])
+		
 		cv2.imwrite("hull.jpg", hull_img)
-		# outHull = cv2.convexHull(isolated_labels[2])
 
-Segment().segment(sys.argv[1])
+if __name__ == "__main__":
+	Segment().segment(sys.argv[1])
