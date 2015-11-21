@@ -5,7 +5,7 @@ import sys
 class Segment:
 	def __init__(self, MAX_CLUSTERS = None, MAX_NUM_KMEANS_ITER = None, MAX_KMEANS_EPSILON = None):
 		self.MAX_CLUSTERS = MAX_CLUSTERS or 3
-		self.MAX_NUM_KMEANS_ITER = MAX_NUM_KMEANS_ITER or 25
+		self.MAX_NUM_KMEANS_ITER = MAX_NUM_KMEANS_ITER or 10
 		self.MAX_KMEANS_EPSILON = MAX_KMEANS_EPSILON or 1.0
 		
 		self.KMEANS_TERMINATOR = (cv2.TERM_CRITERIA_MAX_ITER + cv2.TERM_CRITERIA_EPS, self.MAX_NUM_KMEANS_ITER, self.MAX_KMEANS_EPSILON)
@@ -14,47 +14,61 @@ class Segment:
 		# Numbers may vary depending on image resolution
 		# TODO: fix that -- scale with resolution -- 
 		self.ERODE_KERNEL = np.ones((3, 3),np.uint8)
-		self.DILATE_KERNEL = np.ones((6, 6),np.uint8)
+		self.DILATE_KERNEL = np.ones((3, 3),np.uint8)
 	
 	def postProcessImg(self, image, tag):
 		# Cleans up remaining noise
 		cv2.erode(image, self.ERODE_KERNEL, image)
-		cv2.dilate(image, self.DILATE_KERNEL, image)
+		#cv2.dilate(image, self.DILATE_KERNEL, image)
+		#self.autoRotate(image, tag)
+
 		cv2.imwrite("processed"+tag+".jpg", image)
-		outImage, contours, hierarchy = cv2.findContours(image, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+		#outImage, contours, hierarchy = cv2.findContours(image, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+		#rows, cols = len(image), len(image[0])
 
+	# Test function -- maximizes height
+	def autoRotate(self, image, tag):
+		# Keep track of rotation
+		largestHeight = 0;
+		bestRotation = 0
 		rows, cols = len(image), len(image[0])
-
-		# Find largest contour length and area
-		largestArea = 0
-		largestLen = 0
-		for contour in contours:
-			area = cv2.contourArea(contour)
-			if largestLen < len(contour):
-				largestLen = len(contour)
-			if largestArea < area:
-				largestArea = area
-
-		# Finds best scoring contour based on area (and possibly other factors)
-		largestScore = 0
-		currentContour = contours[0]
-		currentContourIndex = 0
-		for i, contour in enumerate(contours):
-			area = cv2.contourArea(contour)
-			newScore = area/largestArea #+ len(contour)/largestLen
-			if largestScore < newScore and area < (rows*cols*0.9):
-				largestScore = newScore
-				currentContour = contour
-				currentContourIndex = i
+		# Rotate around 360 degrees
+		increments = 5
+		for i in range(360/increments):
+			currentRotation = i*increments
+			M = cv2.getRotationMatrix2D((cols/2,rows/2),currentRotation,1)
+			rotatedImage = cv2.warpAffine(image,M,(cols,rows))
+			#cv2.imwrite("rotated" + str(currentRotation) + str(tag) + ".jpg", rotatedImage)
 			
-		# Approximates the contour
-		approx = cv2.approxPolyDP(contours[currentContourIndex], 0.007*cv2.arcLength(contours[currentContourIndex], True), True)
-		approxArray = [approx]
+			# Check height
+			outImage, contours, hierarchy = cv2.findContours(rotatedImage, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+			# Find largest contour
+			largestArea = 0
+			largestContour = contours[0]
+			for contour in contours:
+				area = cv2.contourArea(contour)
+				if largestArea < area:
+					largestArea = area
+					largestContour = contour
 
-		# Outputs the image
-		polyApproxImage = np.zeros((rows, cols, 3))
-		cv2.drawContours(polyApproxImage, approxArray, 0, (255, 255, 255), -1) 
-		cv2.imwrite("hull"+tag+".jpg", polyApproxImage)
+			# Finds height of contour
+			highest = 0;
+			lowest = 10000;
+			for point in largestContour:
+				y = point[0][1]
+				if y > highest:
+					highest = y
+				if y < lowest:
+					lowest = y
+			height = highest-lowest
+
+			if height > largestHeight:
+				largestHeight = height
+				bestRotation = currentRotation
+
+		M = cv2.getRotationMatrix2D((cols/2,rows/2),bestRotation,1)
+		image = cv2.warpAffine(image,M,(cols,rows))
+		cv2.imwrite("rotated" + str(bestRotation) + "_" + str(tag) + ".jpg", image)
 
 	def segment(self, img_path):
 		print("Converting to Lab...")
